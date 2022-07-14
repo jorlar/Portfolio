@@ -20,6 +20,7 @@
     --color-grey5: #2a2e35;
     --color-grey6: #12181b;
     --br-sm-2: 14px;
+    --box-shadow1: 0 3px 15px rgba(0,0,0,.3);
 }
 
 body {
@@ -94,6 +95,14 @@ section {
     align-items: center;
     justify-content: center;
 
+    .active-btn {
+        background-color: var(--color-secondary) !important;
+        transition: all .4s ease-in-out;
+
+        i {
+            color: var(--color-white);
+        }
+    }
     .control {
         padding: 1rem;
         cursor: pointer;
@@ -104,5 +113,13 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: .7rem 0;
+        box-shadow: var(--box-shadow1);
+
+        i{
+            font-size: 1.2rem;
+            color: var(--color-grey2);
+            pointer-events: none;
+        }
     }
 }
